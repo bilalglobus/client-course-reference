@@ -1,0 +1,1559 @@
+{
+  "_instructions_for_deployment_bot": [
+    "Target: the AISP custom CMS. Update the EXISTING course page whose course number is '2015' and URL handle is 'job-hazard-analysis-jha'. If no such page exists, create it with this handle. Never change an existing handle or URL.",
+    "Write every value exactly as given. Do not rewrite, shorten, translate or 'improve' any copy, and do not change prices, hours or CEU values.",
+    "Map each JSON key to the CMS field with the same purpose: 'product' = course record (title, status, packages/prices), 'seo' = search and social fields, 'metafields' = structured course fields (match by the label, e.g. 'Course number', 'FAQ', 'Units'; key_hint values are suggestions only), 'page_sections' = the copy for each block of the course page template.",
+    "page_sections is listed in page order and follows the final course page: hero, section_nav, sticky_enroll_card, overview, process, who, outcomes, before_you_enrol, curriculum, assessment, credentials, where_it_fits, fees, why_choose_us, faq, related_courses, final_cta. Fill every block; if a block is driven by template settings rather than fields, apply the copy there.",
+    "product.body_html is the course Description and the Overview body. External links must keep target=\"_blank\" and rel=\"noopener\".",
+    "Placeholders: 'KEEP EXISTING VALUE' = leave the current CMS value untouched. 'BROCHURE_LINK' = use the course's existing brochure URL. 'BUY_URL_ID' (new courses 2106 and 2135 only) = replace with the course_id of the course's registration page. 'PDF_LINK' = no file yet: hide that document row until a URL is supplied. A value marked with a _confirm note must be checked before publishing.",
+    "Credits: write the CEU value from metafields.Credits (taken from the AISP Training Courses Price List 2026-27).",
+    "schema_jsonld: output it as one <script type=\"application/ld+json\"> block in the page head, unless the template already generates EducationalOrganization, WebSite, WebPage, BreadcrumbList, Course and FAQPage nodes from these fields. Never output both.",
+    "After publishing, request indexing for the canonical URL in Google Search Console."
+  ],
+  "course_number": "2015",
+  "product": {
+    "handle": "job-hazard-analysis-jha",
+    "title": "Job Hazard Analysis (JHA)",
+    "status": "active",
+    "product_type": "Certificate course",
+    "vendor": "American Institute of Safety Professionals",
+    "collections": [
+      "Certificate courses",
+      "Qualifications"
+    ],
+    "tags": [
+      "certificate-courses",
+      "qualification",
+      "General industry",
+      "Construction",
+      "job hazard analysis",
+      "JHA",
+      "JSA",
+      "hazard identification",
+      "hierarchy of controls",
+      "OSHA 3071",
+      "8 hours"
+    ],
+    "body_html": "<p class=\"tldr\"><strong>Job Hazard Analysis (JHA)</strong> is 8 hours of self-paced job hazard analysis training online from the American Institute of Safety Professionals (AISP) that teaches a proven technique for finding hazards before they hurt someone. You learn to select and prioritize jobs, break each job into steps, identify what can go wrong in every step, choose controls with the hierarchy of controls and turn the result into a written safe job procedure that crews actually use.</p><p>OSHA defines a JHA as a technique that focuses on job tasks as a way to identify hazards before they occur, looking at the relationship between the worker, the task, the tools and the work environment (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>). It matters because hazards hide in routine work: in 2024, 5,070 workers died from work-related injuries in the United States, one every 104 minutes (<a href=\"https://www.bls.gov/news.release/cfoi.nr0.htm\" target=\"_blank\" rel=\"noopener\">BLS Census of Fatal Occupational Injuries, released February 2026</a>). A well-run JHA program catches those hazards at the planning stage, when they are cheapest and easiest to fix.</p><p>The course supports compliance across general industry and construction. It helps you meet the workplace hazard assessment and written certification required for PPE selection under <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132\" target=\"_blank\" rel=\"noopener\">OSHA 29 CFR 1910.132(d)</a>, provides documented evidence that recognized hazards are being addressed under the <a href=\"https://www.osha.gov/laws-regs/oshact/section5-duties\" target=\"_blank\" rel=\"noopener\">General Duty Clause</a> of the OSH Act, and applies the <a href=\"https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html\" target=\"_blank\" rel=\"noopener\">NIOSH hierarchy of controls</a> so that elimination and engineering fixes come before PPE.</p>",
+    "variants": [
+      {
+        "option1": "Complete · Hard-bound + PDF",
+        "price": "99.99",
+        "compare_at_price": "199.99",
+        "requires_shipping": true,
+        "taxable": true
+      },
+      {
+        "option1": "Digital · PDF certificate",
+        "price": "89.99",
+        "compare_at_price": "174.99",
+        "requires_shipping": false,
+        "taxable": true
+      }
+    ],
+    "options": [
+      {
+        "name": "Package",
+        "values": [
+          "Complete · Hard-bound + PDF",
+          "Digital · PDF certificate"
+        ]
+      }
+    ],
+    "page_template": "course page (final layout)"
+  },
+  "seo": {
+    "page_title": "Job Hazard Analysis Training Online | JHA Course | AMIOSP",
+    "page_title_length": 57,
+    "meta_description": "Job hazard analysis training online: select jobs, break them into steps, find hazards and set controls per OSHA 3071. 8 hours, from USD 89.99.",
+    "meta_description_length": 142,
+    "url_handle": "job-hazard-analysis-jha",
+    "canonical_url": "https://amiosp.com/courses/job-hazard-analysis-jha",
+    "focus_keyword": "job hazard analysis training online",
+    "secondary_keywords": [
+      "job hazard analysis course",
+      "JHA training",
+      "how to conduct a job hazard analysis",
+      "OSHA 3071 job hazard analysis",
+      "job safety analysis training",
+      "JHA vs JSA",
+      "what is a job hazard analysis",
+      "job hazard analysis example",
+      "JHA checklist",
+      "hierarchy of controls",
+      "safe job procedure",
+      "JHA certification online",
+      "is a JHA required by OSHA"
+    ],
+    "answer_engine_questions": [
+      "What is a job hazard analysis (JHA)?",
+      "Why is a job hazard analysis important?",
+      "Is a job hazard analysis required by OSHA?",
+      "What is the difference between a JHA and a JSA?",
+      "Which jobs should get a JHA first?",
+      "What questions should you ask to identify hazards in a job step?",
+      "What should a JHA worksheet include?",
+      "How often should a job hazard analysis be reviewed?",
+      "Who should conduct a job hazard analysis?",
+      "What is the hierarchy of controls in a JHA?",
+      "What is the difference between a JHA and a risk assessment?",
+      "Does a JHA replace lockout/tagout procedures or permits?",
+      "What are the most common job hazard analysis mistakes?",
+      "Is this an OSHA-approved course or an OSHA card?",
+      "Do I need any experience to enroll?",
+      "How long does the course take?",
+      "Does this course carry continuing education units (CEUs)?",
+      "How is the course assessed?",
+      "What will I receive when I pass?",
+      "How much does the course cost?",
+      "Can I enroll my whole team?"
+    ],
+    "url_redirects": {
+      "create": [],
+      "note": "Only create if the old path exists and differs from the canonical URL."
+    },
+    "media_alt_text": [
+      {
+        "media": "Course hero / featured image",
+        "alt": "Job Hazard Analysis (JHA) online course showing job steps, hazards and controls"
+      },
+      {
+        "media": "Certificate sample",
+        "alt": "Job Hazard Analysis (JHA) certificate of completion from the American Institute of Safety Professionals"
+      },
+      {
+        "media": "Wallet card front",
+        "alt": "Job Hazard Analysis (JHA) professional wallet card with QR verification, front"
+      },
+      {
+        "media": "Wallet card back",
+        "alt": "Job Hazard Analysis (JHA) professional wallet card with QR verification, back"
+      }
+    ],
+    "product_category": {
+      "value": "Educational Services in Personal Services",
+      "note": "Course category for the CMS / merchant feed."
+    },
+    "social_sharing": {
+      "og_title": "Job Hazard Analysis (JHA) Training Online | AMIOSP",
+      "og_description": "Job hazard analysis training online: select jobs, break them into steps, find hazards and set controls per OSHA 3071. 8 hours, from USD 89.99.",
+      "twitter_card": "summary_large_image",
+      "og_image_alt": "Job Hazard Analysis (JHA) online course showing job steps, hazards and controls"
+    },
+    "indexing": {
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+      "canonical_url": "https://amiosp.com/courses/job-hazard-analysis-jha",
+      "sitemap": "Include in the XML sitemap once the page is published"
+    },
+    "field_checklist": [
+      "Page title ✓",
+      "Meta description ✓",
+      "URL handle ✓",
+      "Canonical URL ✓",
+      "Media alt text ✓",
+      "Open Graph / Twitter tags ✓",
+      "Structured data ✓",
+      "Tags and collections ✓",
+      "Section menu ✓",
+      "Learning outcomes ✓",
+      "Key course information ✓",
+      "Specification documents ✓",
+      "Breadcrumb + WebPage schema ✓"
+    ]
+  },
+  "metafields": {
+    "Course number": {
+      "key_hint": "custom.course_number",
+      "type": "single_line_text_field",
+      "value": "2015"
+    },
+    "Delivery": {
+      "key_hint": "custom.delivery",
+      "type": "list.single_line_text_field",
+      "value": [
+        "Online eLearning through the AISP Student Dashboard (LMS)",
+        "100% self-paced",
+        "Downloadable reference materials, yours to keep",
+        "Lifetime access to course materials"
+      ]
+    },
+    "Languages": {
+      "key_hint": "custom.languages",
+      "type": "single_line_text_field",
+      "value": "All course materials, reference books and examinations are delivered in English, Spanish, German and Arabic."
+    },
+    "Level": {
+      "key_hint": "custom.level",
+      "type": "single_line_text_field",
+      "value": "Foundation · Professional short course"
+    },
+    "Entry requirements": {
+      "key_hint": "custom.entry_requirements",
+      "type": "list.single_line_text_field",
+      "value": [
+        "Open to everyone; no prerequisites",
+        "No prior experience required",
+        "No academic degree required",
+        "Working English proficiency (materials also offered in Spanish, German and Arabic)"
+      ]
+    },
+    "Who it's for": {
+      "key_hint": "custom.who_its_for",
+      "type": "json",
+      "value": {
+        "intro": "Anyone who plans work, leads a crew or helps control hazards on the job, in general industry or construction.",
+        "roles": [
+          "Safety officers and HSE coordinators",
+          "Supervisors, foremen and team leaders",
+          "Safety managers running a JHA program",
+          "Frontline workers who contribute task knowledge",
+          "Safety committee members",
+          "Maintenance and operations planners",
+          "Safety trainers and consultants",
+          "Candidates preparing for CHSO, CSSP or CSS certification"
+        ]
+      }
+    },
+    "Brochure link": {
+      "key_hint": "custom.brochure_link",
+      "type": "url",
+      "value": "KEEP EXISTING VALUE"
+    },
+    "FAQ": {
+      "key_hint": "custom.faq",
+      "type": "json",
+      "value": [
+        {
+          "q": "What is a job hazard analysis (JHA)?",
+          "a": "A job hazard analysis is a technique that focuses on job tasks as a way to identify hazards before they occur (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>). You break a job into steps, identify the hazards in each step and decide the controls that eliminate or reduce them. The result is usually written up as a safe job procedure that workers are briefed on."
+        },
+        {
+          "q": "Why is a job hazard analysis important?",
+          "a": "Because most serious injuries happen during routine tasks whose hazards were never written down. In 2024, 5,070 US workers died from work-related injuries, one every 104 minutes (<a href=\"https://www.bls.gov/news.release/cfoi.nr0.htm\" target=\"_blank\" rel=\"noopener\">BLS CFOI</a>), and private employers reported about 2.5 million nonfatal injuries and illnesses (<a href=\"https://www.bls.gov/opub/ted/2026/2-5-million-workplace-injuries-and-illnesses-in-private-industry-in-2024-down-3-1-percent-from-2023.htm\" target=\"_blank\" rel=\"noopener\">BLS</a>). A JHA finds those hazards at the planning stage, when they are cheapest to fix."
+        },
+        {
+          "q": "Is a job hazard analysis required by OSHA?",
+          "a": "Not by that name. There is no single OSHA standard that requires a document called a JHA. However, <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132\" target=\"_blank\" rel=\"noopener\">29 CFR 1910.132(d)</a> requires employers to assess the workplace for hazards that need PPE and to certify that assessment in writing, and the <a href=\"https://www.osha.gov/laws-regs/oshact/section5-duties\" target=\"_blank\" rel=\"noopener\">General Duty Clause</a> requires a workplace free from recognized serious hazards. A JHA is one of the most practical ways to meet both duties and show your work."
+        },
+        {
+          "q": "What is the difference between a JHA and a JSA?",
+          "a": "Very little. In practice the terms are used interchangeably: both break a job into steps, identify hazards and set controls. Some organizations use JSA for a quick pre-task review done in the field and JHA for a more formal, documented analysis. This course teaches the full OSHA 3071 method, which works for either."
+        },
+        {
+          "q": "Which jobs should get a JHA first?",
+          "a": "OSHA recommends starting with jobs that have the highest injury or illness rates, jobs that could cause severe or disabling harm even if no one has been hurt yet, jobs where one simple human error could cause a serious accident, new or changed jobs, and jobs complex enough to need written instructions (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "What questions should you ask to identify hazards in a job step?",
+          "a": "OSHA 3071 uses five questions for every step: What can go wrong? What are the consequences? How could it arise? What are other contributing factors? How likely is it that the hazard will occur? A good hazard description names the environment, the exposure, the trigger, the consequence and any contributing factors (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "What should a JHA worksheet include?",
+          "a": "A JHA worksheet should include the job title and location, the people who did the analysis and the date, each job step in order, the hazards in each step, the controls for each hazard, the PPE required, and review and sign-off details. Keep it to one or two pages so crews can actually use it at a pre-task briefing."
+        },
+        {
+          "q": "How often should a job hazard analysis be reviewed?",
+          "a": "Review each JHA periodically even if the job has not changed, and always after an injury or illness, after a close call, and whenever the equipment, materials, process or work environment changes. OSHA also advises training all affected employees whenever a JHA is revised (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "Who should conduct a job hazard analysis?",
+          "a": "A supervisor or safety professional who knows the method usually leads the JHA, but the workers who perform the job must be involved at every stage. They understand the task best, they help catch hazards an observer would miss, and they are far more likely to follow controls they helped design."
+        },
+        {
+          "q": "What is the hierarchy of controls in a JHA?",
+          "a": "The hierarchy of controls is the order in which you choose controls, from most to least effective: elimination, substitution, engineering controls, administrative controls and PPE (<a href=\"https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html\" target=\"_blank\" rel=\"noopener\">NIOSH</a>). A JHA should always ask whether the hazard can be removed or engineered out before relying on procedures or protective equipment."
+        },
+        {
+          "q": "What is the difference between a JHA and a risk assessment?",
+          "a": "A JHA analyzes one specific job step by step. A risk assessment is broader: it can cover a whole site, process or activity and usually rates each risk by likelihood and severity to set priorities. Many organizations use a risk assessment to decide which jobs need a JHA, then use the JHA to control the hazards in those jobs."
+        },
+        {
+          "q": "Does a JHA replace lockout/tagout procedures or permits?",
+          "a": "No. A JHA identifies hazards and controls, but it does not replace procedures that a specific OSHA standard requires, such as energy control procedures under <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147\" target=\"_blank\" rel=\"noopener\">29 CFR 1910.147</a> or confined space entry permits. A good JHA points to those procedures at the steps where they apply."
+        },
+        {
+          "q": "What are the most common job hazard analysis mistakes?",
+          "a": "The most common mistakes are writing the JHA in an office without watching the job, listing steps that are too broad, describing hazards vaguely (\"be careful\"), jumping straight to PPE instead of higher controls, leaving out the workers who do the job, and never reviewing the JHA after a change or close call."
+        },
+        {
+          "q": "Is this an OSHA-approved course or an OSHA card?",
+          "a": "No. OSHA does not approve or certify private training courses, and this course does not lead to an OSHA Outreach (10- or 30-hour) card. It is a professional course from the American Institute of Safety Professionals, USA, built on OSHA's own JHA guidance (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>) and the NIOSH hierarchy of controls. Your credentials can be verified at amiosp.com/student-verifications."
+        },
+        {
+          "q": "Do I need any experience to enroll?",
+          "a": "No. This job hazard analysis training online is open to everyone, with no prerequisites or academic degree required. Supervisors and workers with field experience bring useful task knowledge, but the method is taught from the beginning."
+        },
+        {
+          "q": "How long does the course take?",
+          "a": "The course requires a minimum of 8 instructional hours. It is fully self-paced online, most learners finish within one month, and access to the course materials does not expire. Enrollment is open throughout 2026."
+        },
+        {
+          "q": "Does this course carry continuing education units (CEUs)?",
+          "a": "Yes. The course carries 0.8 CEU for 8 contact hours of instruction (one CEU equals 10 contact hours). Your official transcript records the hours and CEU, so you can report them toward continuing education requirements; check that your certifying body or employer accepts them."
+        },
+        {
+          "q": "How is the course assessed?",
+          "a": "By one timed, open-book online exam taken through your Student Dashboard. You need 70% or higher to pass, and your result is emailed to you as soon as you finish. If you do not pass, you can review the materials for up to one month and retake the exam up to three more times."
+        },
+        {
+          "q": "What will I receive when I pass?",
+          "a": "A Certificate of Completion, an official transcript and a professional wallet card, each with a unique record and QR code that any employer can verify online at amiosp.com/student-verifications. The Complete package adds a printed, hard-bound certificate posted to you."
+        },
+        {
+          "q": "How much does the course cost?",
+          "a": "USD 89.99 for the Digital package (PDF certificate, transcript and wallet card) or USD 99.99 for the Complete package with a hard-bound printed certificate. One fee covers all modules, materials and the exam. Fees and VAT may apply, and courier charges for hard copies are quoted separately."
+        },
+        {
+          "q": "Can I enroll my whole team?",
+          "a": "Yes. Many employers enroll supervisors or entire crews so everyone works to the same method. Contact an advisor at info@amiosp.com or +1 (689) 286-3561 to arrange team enrollment for your organization."
+        }
+      ]
+    },
+    "Units": {
+      "key_hint": "custom.units",
+      "type": "json",
+      "value": [
+        {
+          "code": "01",
+          "type": "core",
+          "title": "Getting Ready to Perform a Job Hazard Analysis (JHA)",
+          "summary": "Purpose and OSHA basis of JHA, involving workers, reviewing incident history and ranking jobs by risk."
+        },
+        {
+          "code": "02",
+          "type": "core",
+          "title": "Identifying and Listing Job Steps",
+          "summary": "Observing the work and breaking it into clear, sequential steps at the right level of detail."
+        },
+        {
+          "code": "03",
+          "type": "core",
+          "title": "Identifying Hazards Associated with Each Job Step",
+          "summary": "Finding hazards in every step by energy source, exposure, environment and human factors, using OSHA's five hazard questions."
+        },
+        {
+          "code": "04",
+          "type": "core",
+          "title": "Establish Safety Control Strategies",
+          "summary": "Applying the hierarchy of controls, from elimination and engineering fixes to administrative controls and PPE."
+        },
+        {
+          "code": "05",
+          "type": "core",
+          "title": "Develop the Safe Job Procedure (SJP)",
+          "summary": "Writing a safe job procedure, briefing crews and getting worker sign-off."
+        },
+        {
+          "code": "06",
+          "type": "core",
+          "title": "Enhance the JHA Process",
+          "summary": "Reviewing and updating JHAs, linking them to permits, inspections, incident investigation and toolbox talks."
+        }
+      ]
+    },
+    "Included": {
+      "key_hint": "custom.included",
+      "type": "list.single_line_text_field",
+      "value": [
+        "Certificate of Completion (PDF, with hard-bound option) with QR verification",
+        "Official Student Transcript",
+        "Professional wallet card with QR code",
+        "All 6 core modules",
+        "Downloadable reference materials, yours to keep",
+        "Lifetime access to course materials in your Student Dashboard",
+        "Open-book online exam with retakes"
+      ]
+    },
+    "Learning outcomes": {
+      "key_hint": "custom.learning_outcomes",
+      "type": "list.single_line_text_field",
+      "value": [
+        "Explain what a JHA is, its OSHA basis and how it differs from a JSA, risk assessment, HAZOP or FMEA",
+        "Select and rank jobs for analysis using injury history, severity potential, new or changed tasks and near misses",
+        "Break a job into sequential steps at the right level of detail and verify them with workers",
+        "Identify the hazards in each step using OSHA's five hazard questions",
+        "Choose controls in order of the hierarchy of controls and justify the choice",
+        "Write a safe job procedure and brief a crew on it with sign-off",
+        "Decide when a JHA must be reviewed and update it after incidents, close calls or changes",
+        "Track a JHA program with measures such as completion rate and review currency"
+      ]
+    },
+    "Badge": {
+      "key_hint": "custom.badge",
+      "type": "single_line_text_field",
+      "value": "Built on OSHA 3071 guidance"
+    },
+    "Summary": {
+      "key_hint": "custom.summary",
+      "type": "multi_line_text_field",
+      "value": "Job Hazard Analysis (JHA) is an 8-hour online course from the American Institute of Safety Professionals (AISP) that teaches you to analyze any task the way OSHA Publication 3071 describes: choose the right jobs, break them into steps, identify the hazards in each step and select controls using the NIOSH hierarchy of controls. You finish able to write a safe job procedure, brief a crew on it and keep it current."
+    },
+    "Credits": {
+      "key_hint": "custom.credits",
+      "type": "number",
+      "value": 0.8,
+      "note": "0.8 CEU for 8 contact hours, from the AISP Training Courses Price List 2026-27."
+    },
+    "Hours": {
+      "key_hint": "custom.hours",
+      "type": "number_integer",
+      "value": 8
+    },
+    "Code": {
+      "key_hint": "custom.code",
+      "type": "single_line_text_field",
+      "value": "2015"
+    }
+  },
+  "page_sections": {
+    "hero": {
+      "eyebrow": [
+        "8 HOURS",
+        "Professional course",
+        "Enrolment open"
+      ],
+      "h1": "Job Hazard Analysis (JHA)",
+      "subheadline": "Job hazard analysis training online: break any job into steps, spot the hazards in each one and control them before work begins, using OSHA's own JHA method. 100% online, at your own pace.",
+      "primary_cta": {
+        "label": "Enroll now — from USD 89.99",
+        "href": "#fees"
+      },
+      "secondary_cta": {
+        "label": "Download brochure",
+        "href": "BROCHURE_LINK"
+      },
+      "trust_badges": [
+        "Built on OSHA 3071 guidance",
+        "Applies the NIOSH hierarchy of controls",
+        "Employer-verifiable credentials",
+        "Open-book online exam",
+        "Certificate, transcript, wallet card"
+      ],
+      "stats": [
+        {
+          "label": "Duration",
+          "value": "8",
+          "unit": "hours",
+          "sub": "Minimum instructional hours"
+        },
+        {
+          "label": "Modules",
+          "value": "6",
+          "unit": "modules",
+          "sub": "6 core"
+        },
+        {
+          "label": "Completion",
+          "value": "~1",
+          "unit": "month",
+          "sub": "Typical, fully self-paced"
+        },
+        {
+          "label": "Delivery",
+          "value": "100%",
+          "unit": "online",
+          "sub": "Student Dashboard (LMS)"
+        },
+        {
+          "label": "Recognition",
+          "value": "42",
+          "unit": "countries",
+          "sub": "Employer-verifiable worldwide"
+        }
+      ]
+    },
+    "section_nav": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#process",
+        "label": "The JHA process"
+      },
+      {
+        "href": "#outcomes",
+        "label": "Learning outcomes"
+      },
+      {
+        "href": "#curriculum",
+        "label": "Course content"
+      },
+      {
+        "href": "#assessment",
+        "label": "Assessment"
+      },
+      {
+        "href": "#fees",
+        "label": "Fees"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sticky_enroll_card": {
+      "title": "Enrol in this course",
+      "packages": [
+        {
+          "name": "Complete · Hard-bound + PDF",
+          "price": "99.99",
+          "compare_at": "199.99",
+          "save": "Save USD 100"
+        },
+        {
+          "name": "Digital · PDF certificate",
+          "price": "89.99",
+          "compare_at": "174.99",
+          "save": "Save USD 85"
+        }
+      ],
+      "buy_url": "https://amiosp.com/register-online-for-courses?course_id=292",
+      "bullets": [
+        "6 modules · 8 hours · open-book exam",
+        "Self-paced, 100% online",
+        "Certificate, transcript and wallet card"
+      ],
+      "phone": "+1 689 286 3561",
+      "strip_label": "8-HOUR COURSE",
+      "choose_label": "Choose your package",
+      "buy_label": "Buy now",
+      "cart_label": "Add to cart",
+      "checkout_note": "Secure checkout"
+    },
+    "overview": {
+      "eyebrow": "Course overview",
+      "h2": "What is the Job Hazard Analysis (JHA) course?",
+      "body_html": "<p class=\"tldr\"><strong>Job Hazard Analysis (JHA)</strong> is 8 hours of self-paced job hazard analysis training online from the American Institute of Safety Professionals (AISP) that teaches a proven technique for finding hazards before they hurt someone. You learn to select and prioritize jobs, break each job into steps, identify what can go wrong in every step, choose controls with the hierarchy of controls and turn the result into a written safe job procedure that crews actually use.</p><p>OSHA defines a JHA as a technique that focuses on job tasks as a way to identify hazards before they occur, looking at the relationship between the worker, the task, the tools and the work environment (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>). It matters because hazards hide in routine work: in 2024, 5,070 workers died from work-related injuries in the United States, one every 104 minutes (<a href=\"https://www.bls.gov/news.release/cfoi.nr0.htm\" target=\"_blank\" rel=\"noopener\">BLS Census of Fatal Occupational Injuries, released February 2026</a>). A well-run JHA program catches those hazards at the planning stage, when they are cheapest and easiest to fix.</p><p>The course supports compliance across general industry and construction. It helps you meet the workplace hazard assessment and written certification required for PPE selection under <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132\" target=\"_blank\" rel=\"noopener\">OSHA 29 CFR 1910.132(d)</a>, provides documented evidence that recognized hazards are being addressed under the <a href=\"https://www.osha.gov/laws-regs/oshact/section5-duties\" target=\"_blank\" rel=\"noopener\">General Duty Clause</a> of the OSH Act, and applies the <a href=\"https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html\" target=\"_blank\" rel=\"noopener\">NIOSH hierarchy of controls</a> so that elimination and engineering fixes come before PPE.</p>",
+      "at_a_glance": {
+        "last_reviewed": "31 Oct 2026",
+        "rows": [
+          [
+            "Course type",
+            "Professional short course"
+          ],
+          [
+            "Also known as",
+            "Job safety analysis (JSA) · Task hazard analysis"
+          ],
+          [
+            "Guidance",
+            "OSHA 3071 · OSHA 1910.132(d) · NIOSH hierarchy of controls"
+          ],
+          [
+            "Awarded by",
+            "American Institute of Safety Professionals, USA"
+          ],
+          [
+            "Delivery",
+            "Online · Student Dashboard (LMS)"
+          ],
+          [
+            "Instructional hours",
+            "8 minimum"
+          ],
+          [
+            "Modules",
+            "6 (6 core)"
+          ],
+          [
+            "Assessment",
+            "Open-book online exam · 70% to pass"
+          ],
+          [
+            "Enrolment window",
+            "Jan 2026 – Dec 2026"
+          ]
+        ]
+      }
+    },
+    "process": {
+      "eyebrow": "What you'll learn",
+      "h2": "How do you conduct a job hazard analysis?",
+      "intro": "OSHA 3071 sets out a simple, repeatable method. The course teaches each step with worked examples, so you can run a JHA on your own jobs the day you finish.",
+      "steps": [
+        {
+          "title": "Involve the workers who do the job",
+          "text": "Bring in the people who perform the task. They know the shortcuts, the awkward steps and the near misses, and their involvement builds ownership of the controls. The JHA evaluates the job, not the worker."
+        },
+        {
+          "title": "Pick and rank the jobs to analyze",
+          "text": "Review injury, illness and near-miss history, fix any immediately dangerous hazards on the spot, then rank jobs by likelihood and severity. Start with jobs that have high injury rates, could cause severe harm, are new or changed, or are complex enough to need written instructions."
+        },
+        {
+          "title": "Break the job into steps",
+          "text": "Watch the job being done and list each step in order, starting each with an action verb. Keep steps detailed enough to show every action but not so detailed that the list becomes unworkable, then check the list with the workers."
+        },
+        {
+          "title": "Identify the hazards in each step",
+          "text": "For every step ask: What can go wrong? What are the consequences? How could it arise? What else contributes? How likely is it? Consider energy sources, struck-by and caught-in risks, chemical and noise exposure, ergonomics and the work environment."
+        },
+        {
+          "title": "Select controls using the hierarchy",
+          "text": "Eliminate or substitute the hazard where you can, then apply engineering controls, then administrative controls, and use PPE as the last line of defense. Review proposed controls with the workers before you adopt them."
+        },
+        {
+          "title": "Write the safe job procedure and keep it current",
+          "text": "Turn the analysis into a clear safe job procedure, brief the crew and get sign-off. Review the JHA periodically, after any injury, illness or close call, and whenever the job, tools or conditions change, and retrain workers on every revision."
+        }
+      ],
+      "diagram": {
+        "title": "The hierarchy of controls",
+        "subtitle": "Work from the top down: the higher the control, the more reliable it is (NIOSH)",
+        "links": [
+          "Elimination: remove the hazard",
+          "Substitution: replace it with something safer",
+          "Engineering controls: isolate people from the hazard",
+          "Administrative controls: change the way people work",
+          "PPE: protect the worker with equipment"
+        ]
+      },
+      "table": {
+        "caption": "Sample JHA worksheet: grinding a small steel part on a bench grinder",
+        "columns": [
+          "Job step",
+          "What can go wrong (hazard)",
+          "Controls"
+        ],
+        "rows": [
+          [
+            "1. Inspect the grinder and wheel",
+            "Cracked or wrong-speed wheel bursts in use",
+            "Check wheel speed rating against spindle speed, inspect the wheel for cracks (ring-test any new wheel before mounting), confirm guards are in place; tag out a defective grinder"
+          ],
+          [
+            "2. Adjust the work rest and tongue guard",
+            "Part or fingers pulled between wheel and rest",
+            "Set the work rest no more than 1/8 inch and the tongue guard no more than 1/4 inch from the wheel, with the grinder off"
+          ],
+          [
+            "3. Start the grinder",
+            "Wheel failure at start-up strikes the operator",
+            "Stand to the side of the wheel during start-up; let it reach full speed before use"
+          ],
+          [
+            "4. Grind the part",
+            "Flying particles; hand contact; hot metal",
+            "Safety glasses plus face shield; hold small parts with a clamp or locking pliers; keep the rest adjusted as the wheel wears"
+          ],
+          [
+            "5. Shut down and clean up",
+            "Contact with a coasting wheel; grinding dust",
+            "Wait for the wheel to stop; clean with a brush or vacuum, not by hand"
+          ]
+        ],
+        "note": "Illustrative example. Work rest and tongue guard limits are from OSHA 29 CFR 1910.215. Your JHA must reflect your own equipment, manufacturer instructions and workers' input."
+      }
+    },
+    "who": {
+      "eyebrow": "Who it's for",
+      "h2": "Who should take this course?",
+      "intro": "Anyone who plans work, leads a crew or helps control hazards on the job, in general industry or construction.",
+      "roles": [
+        "Safety officers and HSE coordinators",
+        "Supervisors, foremen and team leaders",
+        "Safety managers running a JHA program",
+        "Frontline workers who contribute task knowledge",
+        "Safety committee members",
+        "Maintenance and operations planners",
+        "Safety trainers and consultants",
+        "Candidates preparing for CHSO, CSSP or CSS certification"
+      ],
+      "entry_title": "Prerequisites",
+      "entry_intro": "Open to everyone. No prior training needed.",
+      "entry": [
+        "Open to everyone; no prerequisites",
+        "No prior experience required",
+        "No academic degree required",
+        "Working English proficiency (materials also offered in Spanish, German and Arabic)"
+      ],
+      "entry_anchor": "prerequisites"
+    },
+    "outcomes": {
+      "id": "outcomes",
+      "eyebrow": "Learning outcomes",
+      "h2": "What will you be able to do?",
+      "intro": "By the end of this course you will be able to:",
+      "items": [
+        "Explain what a JHA is, its OSHA basis and how it differs from a JSA, risk assessment, HAZOP or FMEA",
+        "Select and rank jobs for analysis using injury history, severity potential, new or changed tasks and near misses",
+        "Break a job into sequential steps at the right level of detail and verify them with workers",
+        "Identify the hazards in each step using OSHA's five hazard questions",
+        "Choose controls in order of the hierarchy of controls and justify the choice",
+        "Write a safe job procedure and brief a crew on it with sign-off",
+        "Decide when a JHA must be reviewed and update it after incidents, close calls or changes",
+        "Track a JHA program with measures such as completion rate and review currency"
+      ],
+      "footer": "Each outcome is assessed by the final online examination. See Assessment.",
+      "footer_link": "#assessment",
+      "_confirm": "ANSI/IACET 1-2018 Element 2.3: these must match the approved course_outcomes record in the Student Dashboard word for word. If the record differs, use the record wording here, in metafields.Learning outcomes and in schema \"teaches\"."
+    },
+    "before_you_enrol": {
+      "id": "before-you-enrol",
+      "eyebrow": "Before you enrol",
+      "h2": "Key course information",
+      "intro": "Everything you need to know before you register.",
+      "blocks": [
+        {
+          "title": "Prerequisites",
+          "text": "Check the prerequisites for this course before you register.",
+          "link_label": "See prerequisites",
+          "link": "#prerequisites"
+        },
+        {
+          "title": "Duration and access",
+          "text": "Duration: 8 contact hours, online and self-paced. Access: Access to the course materials does not expire."
+        },
+        {
+          "title": "Continuing education",
+          "text": "Continuing education: 8 contact hours (0.8 CEU)."
+        },
+        {
+          "title": "Technical requirements",
+          "text": "A supported web browser, a stable internet connection, and a device that meets the published minimum specification."
+        },
+        {
+          "title": "Support services",
+          "text": "Email helpdesk@amiosp.com, ask your instructor through the LMS Q&A, and get technical support whenever you need it.",
+          "link_label": "helpdesk@amiosp.com",
+          "link": "mailto:helpdesk@amiosp.com"
+        },
+        {
+          "title": "Payment and refunds",
+          "text": "All fees are charged in US dollars (USD). Please read our refund policy before you pay.",
+          "link_label": "Refund and Cancellation Policy",
+          "link": "https://amiosp.com/policies?refund-and-cancellation-policy"
+        }
+      ]
+    },
+    "curriculum": {
+      "eyebrow": "Course content",
+      "h2": "What will you study?",
+      "intro": "Six core modules follow the JHA process from start to finish: getting ready, listing job steps, finding hazards, controlling them, writing the safe job procedure and making JHA part of daily work.",
+      "units": [
+        {
+          "code": "01",
+          "type": "core",
+          "title": "Getting Ready to Perform a Job Hazard Analysis (JHA)",
+          "summary": "Purpose and OSHA basis of JHA, involving workers, reviewing incident history and ranking jobs by risk."
+        },
+        {
+          "code": "02",
+          "type": "core",
+          "title": "Identifying and Listing Job Steps",
+          "summary": "Observing the work and breaking it into clear, sequential steps at the right level of detail."
+        },
+        {
+          "code": "03",
+          "type": "core",
+          "title": "Identifying Hazards Associated with Each Job Step",
+          "summary": "Finding hazards in every step by energy source, exposure, environment and human factors, using OSHA's five hazard questions."
+        },
+        {
+          "code": "04",
+          "type": "core",
+          "title": "Establish Safety Control Strategies",
+          "summary": "Applying the hierarchy of controls, from elimination and engineering fixes to administrative controls and PPE."
+        },
+        {
+          "code": "05",
+          "type": "core",
+          "title": "Develop the Safe Job Procedure (SJP)",
+          "summary": "Writing a safe job procedure, briefing crews and getting worker sign-off."
+        },
+        {
+          "code": "06",
+          "type": "core",
+          "title": "Enhance the JHA Process",
+          "summary": "Reviewing and updating JHAs, linking them to permits, inspections, incident investigation and toolbox talks."
+        }
+      ],
+      "topics": [
+        "JHA purpose and OSHA 3071",
+        "JHA vs JSA vs risk assessment",
+        "Selecting and ranking jobs",
+        "Involving workers",
+        "Breaking jobs into steps",
+        "Hazard identification questions",
+        "Energy sources and exposures",
+        "Human factors",
+        "Hierarchy of controls",
+        "PPE hazard assessment (1910.132(d))",
+        "JHA worksheets",
+        "Safe job procedures",
+        "Pre-task briefings and toolbox talks",
+        "Reviewing and updating JHAs",
+        "JHA program metrics"
+      ],
+      "footer_note": "8 instructional hours minimum · fully self-paced",
+      "authority_links": [
+        {
+          "label": "OSHA 3071 Job Hazard Analysis",
+          "url": "https://www.osha.gov/sites/default/files/publications/osha3071.pdf"
+        },
+        {
+          "label": "OSHA 29 CFR 1910.132 PPE general requirements (hazard assessment)",
+          "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132"
+        }
+      ],
+      "groups": [
+        {
+          "type": "core",
+          "title": "Core modules",
+          "count": "6 modules"
+        }
+      ],
+      "topics_title": "Topics covered"
+    },
+    "assessment": {
+      "eyebrow": "How it works",
+      "h2": "How is the course assessed?",
+      "intro": "One online, open-book exam at the end of the course, taken through your Student Dashboard. Score 70% or higher to pass. Your result is emailed to you straight after the exam.",
+      "steps": [
+        [
+          "Enroll and get access",
+          "Start immediately in the Institute's Student Dashboard (LMS)."
+        ],
+        [
+          "Study the modules",
+          "6 core modules. Most learners finish within a month."
+        ],
+        [
+          "Take the exam",
+          "One timed, open-book online exam."
+        ],
+        [
+          "Get your result",
+          "Emailed as soon as you finish. 70% or higher to pass."
+        ],
+        [
+          "Get certified",
+          "Receive your certificate, transcript and wallet card, verifiable online."
+        ]
+      ],
+      "facts": [
+        [
+          "70% to pass",
+          "The pass mark for the final online exam"
+        ],
+        [
+          "Open-book",
+          "Use your course materials during the exam"
+        ],
+        [
+          "Up to 3 retakes",
+          "Review the materials for up to a month, then retake up to three more times"
+        ]
+      ],
+      "spec_documents": {
+        "title": "Specification documents",
+        "intro": "The official documents for this course: how it is structured, delivered and assessed.",
+        "label": "PDF downloads",
+        "items": [
+          {
+            "title": "Course brochure",
+            "desc": "Overview, modules, assessment and fees",
+            "href": "BROCHURE_LINK"
+          },
+          {
+            "title": "Course outline",
+            "desc": "Core modules in detail",
+            "href": "PDF_LINK"
+          },
+          {
+            "title": "JHA worksheet template",
+            "desc": "A ready-to-use form for your own job analyses",
+            "href": "PDF_LINK"
+          },
+          {
+            "title": "Exam guidance & pass requirements",
+            "desc": "Open-book exam format, pass mark and retakes",
+            "href": "PDF_LINK"
+          },
+          {
+            "title": "Learner handbook",
+            "desc": "Study guidance, the Student Dashboard and support",
+            "href": "PDF_LINK"
+          },
+          {
+            "title": "Enrolment terms & refund policy",
+            "desc": "Fees, payment and refund conditions",
+            "href": "https://amiosp.com/policies?refund-and-cancellation-policy"
+          }
+        ]
+      },
+      "_confirm": "Retake rule (review for up to a month, then up to three more attempts): check the exam settings for this course in the Student Dashboard; the system settings govern."
+    },
+    "credentials": {
+      "eyebrow": "What you receive",
+      "h2": "What credentials do you receive?",
+      "intro": "Everyone who passes receives a course certificate, an official transcript and a professional wallet card. Each carries a unique record employers can verify online at amiosp.com/student-verifications.",
+      "items": [
+        [
+          "Course certificate",
+          "Hard-bound and/or PDF, depending on your package"
+        ],
+        [
+          "Official transcript",
+          "Your course record and exam result"
+        ],
+        [
+          "Professional wallet card",
+          "With a QR code for instant on-site checks"
+        ]
+      ],
+      "verification": {
+        "title": "How verification works",
+        "link": "https://amiosp.com/student-verifications",
+        "images": [
+          {
+            "label": "Course certificate · Sample · Job Hazard Analysis (JHA)",
+            "src": "https://amiosp.com/storage/photos/shares/Courses%20%28O%29/Course%20Certificates/Job%20Hazard%20Analysis%20%28JHA%29%20Certificate%20-%20American%20Institute%20of%20Safety%20Professionals.webp",
+            "alt": "Sample Job Hazard Analysis (JHA) course certificate issued by the American Institute of Safety Professionals",
+            "_confirm": "URL follows the naming pattern of the JHA certificate image. If no file exists at this URL, KEEP EXISTING VALUE."
+          },
+          {
+            "label": "Wallet card · front · Sample",
+            "src": "https://amiosp.com/storage/photos/shares/Courses%20%28O%29/Course%20Wallet%20Front/Courses%20Student%20Wallet%20Card%20Front%20-%20American%20Institute%20of%20Safety%20Professionals%20USA.webp",
+            "alt": "Front of the American Institute of Safety Professionals student wallet card"
+          },
+          {
+            "label": "Wallet card · back · Sample",
+            "src": "https://amiosp.com/storage/photos/shares/Courses%20%28O%29/Course%20Wallet%20Back/Courses%20Student%20Wallet%20Card%20Back%20-%20American%20Institute%20of%20Safety%20Professionals%20USA.webp",
+            "alt": "Back of the American Institute of Safety Professionals student wallet card"
+          }
+        ]
+      }
+    },
+    "where_it_fits": {
+      "h2": "How does this course fit with other qualifications?",
+      "intro": "JHA is the everyday hazard-control tool behind many of the Institute's safety qualifications.",
+      "steps": [
+        [
+          "Build the base",
+          "Hazards Identification and Risk Assessment (2058)",
+          "Broader risk assessment methods that JHA fits into."
+        ],
+        [
+          "Apply the controls",
+          "Personal Protective and Lifesaving Equipment (2075)",
+          "Select PPE once higher controls are in place."
+        ],
+        [
+          "Learn from incidents",
+          "Incident Investigation & Root Cause Analysis (2089)",
+          "Feed incident findings back into your JHAs."
+        ],
+        [
+          "Lead the program",
+          "Certified Safety Supervisor (CSSP) (6103)",
+          "Supervise crews who work to your safe job procedures."
+        ]
+      ],
+      "roles_line": "Roles that use JHA every day: safety officer · supervisor · foreman · team leader · safety committee member"
+    },
+    "fees": {
+      "eyebrow": "Fees and enrolment",
+      "h2": "How much does the course cost?",
+      "intro": "USD 89.99 for the Digital package, or USD 99.99 with a hard-bound printed certificate. One fee covers all modules, materials, the online exam and your credentials.",
+      "packages": [
+        {
+          "name": "Digital",
+          "sub": "PDF credentials, delivered online",
+          "price": "89.99",
+          "compare_at": "174.99",
+          "features": [
+            "All modules (8+ hours)",
+            "Student Dashboard (LMS) access",
+            "Online open-book exam",
+            "Certificate, transcript and wallet card (PDF)"
+          ],
+          "cta": "Enroll — USD 89.99",
+          "href": "https://amiosp.com/register-online-for-courses?course_id=292"
+        },
+        {
+          "name": "Complete",
+          "badge": "INCLUDES PRINTED CERTIFICATE",
+          "sub": "Hard-bound certificate plus PDF",
+          "price": "99.99",
+          "compare_at": "199.99",
+          "features": [
+            "Everything in Digital",
+            "Hard-bound printed certificate",
+            "Shipped to your address"
+          ],
+          "cta": "Enroll — USD 99.99",
+          "href": "https://amiosp.com/register-online-for-courses?course_id=292"
+        }
+      ],
+      "team_box": {
+        "title": "Training your team?",
+        "text": "Want supervisors and crews writing JHAs the same way across sites? Talk to an advisor about team enrollment.",
+        "cta": "Talk to an advisor",
+        "href": "https://amiosp.com/contact-us"
+      },
+      "small_print": "Fees and VAT may apply. Courier charges for hard copies are quoted separately. Fee questions: accounts@amiosp.com",
+      "trust_line": "Secure checkout · Open enrolment, self-paced"
+    },
+    "why_choose_us": {
+      "h2": "Why study with us?",
+      "items": [
+        {
+          "title": "Follows OSHA's own JHA method",
+          "text": "Built step by step on OSHA Publication 3071, with the NIOSH hierarchy of controls."
+        },
+        {
+          "title": "Practical from day one",
+          "text": "Worked examples and worksheets you can adapt for your own jobs and toolbox talks."
+        },
+        {
+          "title": "Employer-verifiable credentials",
+          "text": "Every certificate and wallet card carries a unique record and QR code."
+        },
+        {
+          "title": "Fast and flexible",
+          "text": "8 hours, 100% online and self-paced. Most learners finish within a month."
+        },
+        {
+          "title": "Open-book exam with retakes",
+          "text": "Learn without pressure; review and retake if you need to."
+        },
+        {
+          "title": "Dedicated support",
+          "text": "Your own account manager, with replies within 24 hours."
+        }
+      ]
+    },
+    "faq": {
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is a job hazard analysis (JHA)?",
+          "a": "A job hazard analysis is a technique that focuses on job tasks as a way to identify hazards before they occur (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>). You break a job into steps, identify the hazards in each step and decide the controls that eliminate or reduce them. The result is usually written up as a safe job procedure that workers are briefed on."
+        },
+        {
+          "q": "Why is a job hazard analysis important?",
+          "a": "Because most serious injuries happen during routine tasks whose hazards were never written down. In 2024, 5,070 US workers died from work-related injuries, one every 104 minutes (<a href=\"https://www.bls.gov/news.release/cfoi.nr0.htm\" target=\"_blank\" rel=\"noopener\">BLS CFOI</a>), and private employers reported about 2.5 million nonfatal injuries and illnesses (<a href=\"https://www.bls.gov/opub/ted/2026/2-5-million-workplace-injuries-and-illnesses-in-private-industry-in-2024-down-3-1-percent-from-2023.htm\" target=\"_blank\" rel=\"noopener\">BLS</a>). A JHA finds those hazards at the planning stage, when they are cheapest to fix."
+        },
+        {
+          "q": "Is a job hazard analysis required by OSHA?",
+          "a": "Not by that name. There is no single OSHA standard that requires a document called a JHA. However, <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132\" target=\"_blank\" rel=\"noopener\">29 CFR 1910.132(d)</a> requires employers to assess the workplace for hazards that need PPE and to certify that assessment in writing, and the <a href=\"https://www.osha.gov/laws-regs/oshact/section5-duties\" target=\"_blank\" rel=\"noopener\">General Duty Clause</a> requires a workplace free from recognized serious hazards. A JHA is one of the most practical ways to meet both duties and show your work."
+        },
+        {
+          "q": "What is the difference between a JHA and a JSA?",
+          "a": "Very little. In practice the terms are used interchangeably: both break a job into steps, identify hazards and set controls. Some organizations use JSA for a quick pre-task review done in the field and JHA for a more formal, documented analysis. This course teaches the full OSHA 3071 method, which works for either."
+        },
+        {
+          "q": "Which jobs should get a JHA first?",
+          "a": "OSHA recommends starting with jobs that have the highest injury or illness rates, jobs that could cause severe or disabling harm even if no one has been hurt yet, jobs where one simple human error could cause a serious accident, new or changed jobs, and jobs complex enough to need written instructions (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "What questions should you ask to identify hazards in a job step?",
+          "a": "OSHA 3071 uses five questions for every step: What can go wrong? What are the consequences? How could it arise? What are other contributing factors? How likely is it that the hazard will occur? A good hazard description names the environment, the exposure, the trigger, the consequence and any contributing factors (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "What should a JHA worksheet include?",
+          "a": "A JHA worksheet should include the job title and location, the people who did the analysis and the date, each job step in order, the hazards in each step, the controls for each hazard, the PPE required, and review and sign-off details. Keep it to one or two pages so crews can actually use it at a pre-task briefing."
+        },
+        {
+          "q": "How often should a job hazard analysis be reviewed?",
+          "a": "Review each JHA periodically even if the job has not changed, and always after an injury or illness, after a close call, and whenever the equipment, materials, process or work environment changes. OSHA also advises training all affected employees whenever a JHA is revised (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>)."
+        },
+        {
+          "q": "Who should conduct a job hazard analysis?",
+          "a": "A supervisor or safety professional who knows the method usually leads the JHA, but the workers who perform the job must be involved at every stage. They understand the task best, they help catch hazards an observer would miss, and they are far more likely to follow controls they helped design."
+        },
+        {
+          "q": "What is the hierarchy of controls in a JHA?",
+          "a": "The hierarchy of controls is the order in which you choose controls, from most to least effective: elimination, substitution, engineering controls, administrative controls and PPE (<a href=\"https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html\" target=\"_blank\" rel=\"noopener\">NIOSH</a>). A JHA should always ask whether the hazard can be removed or engineered out before relying on procedures or protective equipment."
+        },
+        {
+          "q": "What is the difference between a JHA and a risk assessment?",
+          "a": "A JHA analyzes one specific job step by step. A risk assessment is broader: it can cover a whole site, process or activity and usually rates each risk by likelihood and severity to set priorities. Many organizations use a risk assessment to decide which jobs need a JHA, then use the JHA to control the hazards in those jobs."
+        },
+        {
+          "q": "Does a JHA replace lockout/tagout procedures or permits?",
+          "a": "No. A JHA identifies hazards and controls, but it does not replace procedures that a specific OSHA standard requires, such as energy control procedures under <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147\" target=\"_blank\" rel=\"noopener\">29 CFR 1910.147</a> or confined space entry permits. A good JHA points to those procedures at the steps where they apply."
+        },
+        {
+          "q": "What are the most common job hazard analysis mistakes?",
+          "a": "The most common mistakes are writing the JHA in an office without watching the job, listing steps that are too broad, describing hazards vaguely (\"be careful\"), jumping straight to PPE instead of higher controls, leaving out the workers who do the job, and never reviewing the JHA after a change or close call."
+        },
+        {
+          "q": "Is this an OSHA-approved course or an OSHA card?",
+          "a": "No. OSHA does not approve or certify private training courses, and this course does not lead to an OSHA Outreach (10- or 30-hour) card. It is a professional course from the American Institute of Safety Professionals, USA, built on OSHA's own JHA guidance (<a href=\"https://www.osha.gov/sites/default/files/publications/osha3071.pdf\" target=\"_blank\" rel=\"noopener\">OSHA 3071</a>) and the NIOSH hierarchy of controls. Your credentials can be verified at amiosp.com/student-verifications."
+        },
+        {
+          "q": "Do I need any experience to enroll?",
+          "a": "No. This job hazard analysis training online is open to everyone, with no prerequisites or academic degree required. Supervisors and workers with field experience bring useful task knowledge, but the method is taught from the beginning."
+        },
+        {
+          "q": "How long does the course take?",
+          "a": "The course requires a minimum of 8 instructional hours. It is fully self-paced online, most learners finish within one month, and access to the course materials does not expire. Enrollment is open throughout 2026."
+        },
+        {
+          "q": "Does this course carry continuing education units (CEUs)?",
+          "a": "Yes. The course carries 0.8 CEU for 8 contact hours of instruction (one CEU equals 10 contact hours). Your official transcript records the hours and CEU, so you can report them toward continuing education requirements; check that your certifying body or employer accepts them."
+        },
+        {
+          "q": "How is the course assessed?",
+          "a": "By one timed, open-book online exam taken through your Student Dashboard. You need 70% or higher to pass, and your result is emailed to you as soon as you finish. If you do not pass, you can review the materials for up to one month and retake the exam up to three more times."
+        },
+        {
+          "q": "What will I receive when I pass?",
+          "a": "A Certificate of Completion, an official transcript and a professional wallet card, each with a unique record and QR code that any employer can verify online at amiosp.com/student-verifications. The Complete package adds a printed, hard-bound certificate posted to you."
+        },
+        {
+          "q": "How much does the course cost?",
+          "a": "USD 89.99 for the Digital package (PDF certificate, transcript and wallet card) or USD 99.99 for the Complete package with a hard-bound printed certificate. One fee covers all modules, materials and the exam. Fees and VAT may apply, and courier charges for hard copies are quoted separately."
+        },
+        {
+          "q": "Can I enroll my whole team?",
+          "a": "Yes. Many employers enroll supervisors or entire crews so everyone works to the same method. Contact an advisor at info@amiosp.com or +1 (689) 286-3561 to arrange team enrollment for your organization."
+        }
+      ],
+      "side_box": {
+        "title": "Still deciding?",
+        "text": "Speak to an advisor about your experience and goals. We reply within 24 hours.",
+        "phone": "+1 689 286 3561",
+        "email": "info@amiosp.com",
+        "cta": "Contact an advisor",
+        "href": "https://amiosp.com/contact-us"
+      }
+    },
+    "related_courses": [
+      {
+        "course_number": "2058",
+        "title": "Hazards Identification and Risk Assessment",
+        "blurb": "Wider risk assessment methods to prioritize which jobs need a JHA.",
+        "category": "Risk management"
+      },
+      {
+        "course_number": "2089",
+        "title": "Incident Investigation & Root Cause Analysis",
+        "blurb": "Find root causes and feed the lessons back into your JHAs.",
+        "category": "Risk management"
+      },
+      {
+        "course_number": "2075",
+        "title": "Personal Protective and Lifesaving Equipment",
+        "blurb": "Select and manage PPE, the last line in the hierarchy of controls.",
+        "category": "General industry"
+      }
+    ],
+    "related_courses_meta": {
+      "h2": "Related courses",
+      "view_all_label": "View all courses",
+      "view_all_href": "https://amiosp.com/courses",
+      "card_ctas": [
+        "Enrol now",
+        "Details"
+      ]
+    },
+    "final_cta": {
+      "h2": "Find the hazard before it finds your crew.",
+      "sub": "Enroll today: 8 hours, fully online, at your own pace.",
+      "primary": {
+        "label": "Enroll now — from USD 89.99",
+        "href": "#fees"
+      },
+      "secondary": {
+        "label": "Download brochure",
+        "href": "BROCHURE_LINK"
+      }
+    }
+  },
+  "outbound_authority_links": [
+    {
+      "label": "OSHA 3071 Job Hazard Analysis",
+      "url": "https://www.osha.gov/sites/default/files/publications/osha3071.pdf"
+    },
+    {
+      "label": "OSHA 29 CFR 1910.132 PPE general requirements (hazard assessment)",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132"
+    },
+    {
+      "label": "NIOSH Hierarchy of Controls",
+      "url": "https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html"
+    },
+    {
+      "label": "OSH Act Section 5: General Duty Clause",
+      "url": "https://www.osha.gov/laws-regs/oshact/section5-duties"
+    },
+    {
+      "label": "OSHA 29 CFR 1910.215 Abrasive wheel machinery",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.215"
+    },
+    {
+      "label": "BLS Census of Fatal Occupational Injuries",
+      "url": "https://www.bls.gov/news.release/cfoi.nr0.htm"
+    },
+    {
+      "label": "BLS: 2.5 million private-industry injuries and illnesses in 2024 (TED, March 2026)",
+      "url": "https://www.bls.gov/opub/ted/2026/2-5-million-workplace-injuries-and-illnesses-in-private-industry-in-2024-down-3-1-percent-from-2023.htm"
+    }
+  ],
+  "schema_jsonld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://amiosp.com/#organization",
+        "name": "American Institute of Safety Professionals",
+        "alternateName": "AMIOSP",
+        "url": "https://amiosp.com",
+        "email": "info@amiosp.com",
+        "telephone": "+1-689-286-3561",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "265 Hackensack St",
+          "addressLocality": "Wood Ridge",
+          "addressRegion": "NJ",
+          "postalCode": "07075",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://amiosp.com/#website",
+        "url": "https://amiosp.com",
+        "name": "American Institute of Safety Professionals",
+        "publisher": {
+          "@id": "https://amiosp.com/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#webpage",
+        "url": "https://amiosp.com/courses/job-hazard-analysis-jha",
+        "name": "Job Hazard Analysis Training Online | JHA Course | AMIOSP",
+        "description": "Job hazard analysis training online: select jobs, break them into steps, find hazards and set controls per OSHA 3071. 8 hours, from USD 89.99.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://amiosp.com/#website"
+        },
+        "about": {
+          "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#course"
+        },
+        "mainEntity": {
+          "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#course"
+        },
+        "breadcrumb": {
+          "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#breadcrumb"
+        },
+        "dateModified": "2026-10-31",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".tldr",
+            "#faq details p"
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://amiosp.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Courses",
+            "item": "https://amiosp.com/courses"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Job Hazard Analysis (JHA)",
+            "item": "https://amiosp.com/courses/job-hazard-analysis-jha"
+          }
+        ]
+      },
+      {
+        "@type": "Course",
+        "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#course",
+        "name": "Job Hazard Analysis (JHA)",
+        "description": "Job Hazard Analysis (JHA) is an 8-hour online course from the American Institute of Safety Professionals (AISP) that teaches you to analyze any task the way OSHA Publication 3071 describes: choose the right jobs, break them into steps, identify the hazards in each step and select controls using the NIOSH hierarchy of controls. You finish able to write a safe job procedure, brief a crew on it and keep it current.",
+        "url": "https://amiosp.com/courses/job-hazard-analysis-jha",
+        "inLanguage": "en",
+        "courseCode": "2015",
+        "provider": {
+          "@id": "https://amiosp.com/#organization"
+        },
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT8H",
+        "teaches": [
+          "Explain what a JHA is, its OSHA basis and how it differs from a JSA, risk assessment, HAZOP or FMEA",
+          "Select and rank jobs for analysis using injury history, severity potential, new or changed tasks and near misses",
+          "Break a job into sequential steps at the right level of detail and verify them with workers",
+          "Identify the hazards in each step using OSHA's five hazard questions",
+          "Choose controls in order of the hierarchy of controls and justify the choice",
+          "Write a safe job procedure and brief a crew on it with sign-off",
+          "Decide when a JHA must be reviewed and update it after incidents, close calls or changes",
+          "Track a JHA program with measures such as completion rate and review currency"
+        ],
+        "coursePrerequisites": [
+          "Open to everyone; no prerequisites",
+          "No prior experience required",
+          "No academic degree required",
+          "Working English proficiency (materials also offered in Spanish, German and Arabic)"
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Safety officers and HSE coordinators, Supervisors, foremen and team leaders, Safety managers running a JHA program, Frontline workers who contribute task knowledge, Safety committee members, Maintenance and operations planners, Safety trainers and consultants, Candidates preparing for CHSO, CSSP or CSS certification"
+        },
+        "educationalCredentialAwarded": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Job Hazard Analysis (JHA) Certificate of Completion",
+          "credentialCategory": "Professional certificate"
+        },
+        "syllabusSections": [
+          {
+            "@type": "Syllabus",
+            "name": "Core module 1: Getting Ready to Perform a Job Hazard Analysis (JHA)",
+            "description": "Purpose and OSHA basis of JHA, involving workers, reviewing incident history and ranking jobs by risk."
+          },
+          {
+            "@type": "Syllabus",
+            "name": "Core module 2: Identifying and Listing Job Steps",
+            "description": "Observing the work and breaking it into clear, sequential steps at the right level of detail."
+          },
+          {
+            "@type": "Syllabus",
+            "name": "Core module 3: Identifying Hazards Associated with Each Job Step",
+            "description": "Finding hazards in every step by energy source, exposure, environment and human factors, using OSHA's five hazard questions."
+          },
+          {
+            "@type": "Syllabus",
+            "name": "Core module 4: Establish Safety Control Strategies",
+            "description": "Applying the hierarchy of controls, from elimination and engineering fixes to administrative controls and PPE."
+          },
+          {
+            "@type": "Syllabus",
+            "name": "Core module 5: Develop the Safe Job Procedure (SJP)",
+            "description": "Writing a safe job procedure, briefing crews and getting worker sign-off."
+          },
+          {
+            "@type": "Syllabus",
+            "name": "Core module 6: Enhance the JHA Process",
+            "description": "Reviewing and updating JHAs, linking them to permits, inspections, incident investigation and toolbox talks."
+          }
+        ],
+        "hasCourseInstance": [
+          {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "courseWorkload": "PT8H",
+            "startDate": "2026-01-01",
+            "endDate": "2026-12-31",
+            "location": {
+              "@type": "VirtualLocation",
+              "url": "https://sd.amiosp.com/login"
+            }
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Digital (PDF certificate, transcript and wallet card)",
+            "category": "Paid",
+            "price": "89.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://amiosp.com/register-online-for-courses?course_id=292"
+          },
+          {
+            "@type": "Offer",
+            "name": "Complete (hard-bound certificate + PDF)",
+            "category": "Paid",
+            "price": "99.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://amiosp.com/register-online-for-courses?course_id=292"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://amiosp.com/courses/job-hazard-analysis-jha#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a job hazard analysis (JHA)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A job hazard analysis is a technique that focuses on job tasks as a way to identify hazards before they occur (OSHA 3071). You break a job into steps, identify the hazards in each step and decide the controls that eliminate or reduce them. The result is usually written up as a safe job procedure that workers are briefed on."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is a job hazard analysis important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because most serious injuries happen during routine tasks whose hazards were never written down. In 2024, 5,070 US workers died from work-related injuries, one every 104 minutes (BLS CFOI), and private employers reported about 2.5 million nonfatal injuries and illnesses (BLS). A JHA finds those hazards at the planning stage, when they are cheapest to fix."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a job hazard analysis required by OSHA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not by that name. There is no single OSHA standard that requires a document called a JHA. However, 29 CFR 1910.132(d) requires employers to assess the workplace for hazards that need PPE and to certify that assessment in writing, and the General Duty Clause requires a workplace free from recognized serious hazards. A JHA is one of the most practical ways to meet both duties and show your work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a JHA and a JSA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Very little. In practice the terms are used interchangeably: both break a job into steps, identify hazards and set controls. Some organizations use JSA for a quick pre-task review done in the field and JHA for a more formal, documented analysis. This course teaches the full OSHA 3071 method, which works for either."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which jobs should get a JHA first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OSHA recommends starting with jobs that have the highest injury or illness rates, jobs that could cause severe or disabling harm even if no one has been hurt yet, jobs where one simple human error could cause a serious accident, new or changed jobs, and jobs complex enough to need written instructions (OSHA 3071)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What questions should you ask to identify hazards in a job step?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OSHA 3071 uses five questions for every step: What can go wrong? What are the consequences? How could it arise? What are other contributing factors? How likely is it that the hazard will occur? A good hazard description names the environment, the exposure, the trigger, the consequence and any contributing factors (OSHA 3071)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a JHA worksheet include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A JHA worksheet should include the job title and location, the people who did the analysis and the date, each job step in order, the hazards in each step, the controls for each hazard, the PPE required, and review and sign-off details. Keep it to one or two pages so crews can actually use it at a pre-task briefing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should a job hazard analysis be reviewed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Review each JHA periodically even if the job has not changed, and always after an injury or illness, after a close call, and whenever the equipment, materials, process or work environment changes. OSHA also advises training all affected employees whenever a JHA is revised (OSHA 3071)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who should conduct a job hazard analysis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A supervisor or safety professional who knows the method usually leads the JHA, but the workers who perform the job must be involved at every stage. They understand the task best, they help catch hazards an observer would miss, and they are far more likely to follow controls they helped design."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the hierarchy of controls in a JHA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The hierarchy of controls is the order in which you choose controls, from most to least effective: elimination, substitution, engineering controls, administrative controls and PPE (NIOSH). A JHA should always ask whether the hazard can be removed or engineered out before relying on procedures or protective equipment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a JHA and a risk assessment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A JHA analyzes one specific job step by step. A risk assessment is broader: it can cover a whole site, process or activity and usually rates each risk by likelihood and severity to set priorities. Many organizations use a risk assessment to decide which jobs need a JHA, then use the JHA to control the hazards in those jobs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a JHA replace lockout/tagout procedures or permits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A JHA identifies hazards and controls, but it does not replace procedures that a specific OSHA standard requires, such as energy control procedures under 29 CFR 1910.147 or confined space entry permits. A good JHA points to those procedures at the steps where they apply."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the most common job hazard analysis mistakes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most common mistakes are writing the JHA in an office without watching the job, listing steps that are too broad, describing hazards vaguely (\"be careful\"), jumping straight to PPE instead of higher controls, leaving out the workers who do the job, and never reviewing the JHA after a change or close call."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this an OSHA-approved course or an OSHA card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. OSHA does not approve or certify private training courses, and this course does not lead to an OSHA Outreach (10- or 30-hour) card. It is a professional course from the American Institute of Safety Professionals, USA, built on OSHA's own JHA guidance (OSHA 3071) and the NIOSH hierarchy of controls. Your credentials can be verified at amiosp.com/student-verifications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need any experience to enroll?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This job hazard analysis training online is open to everyone, with no prerequisites or academic degree required. Supervisors and workers with field experience bring useful task knowledge, but the method is taught from the beginning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the course take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The course requires a minimum of 8 instructional hours. It is fully self-paced online, most learners finish within one month, and access to the course materials does not expire. Enrollment is open throughout 2026."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this course carry continuing education units (CEUs)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The course carries 0.8 CEU for 8 contact hours of instruction (one CEU equals 10 contact hours). Your official transcript records the hours and CEU, so you can report them toward continuing education requirements; check that your certifying body or employer accepts them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the course assessed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By one timed, open-book online exam taken through your Student Dashboard. You need 70% or higher to pass, and your result is emailed to you as soon as you finish. If you do not pass, you can review the materials for up to one month and retake the exam up to three more times."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What will I receive when I pass?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Certificate of Completion, an official transcript and a professional wallet card, each with a unique record and QR code that any employer can verify online at amiosp.com/student-verifications. The Complete package adds a printed, hard-bound certificate posted to you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does the course cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "USD 89.99 for the Digital package (PDF certificate, transcript and wallet card) or USD 99.99 for the Complete package with a hard-bound printed certificate. One fee covers all modules, materials and the exam. Fees and VAT may apply, and courier charges for hard copies are quoted separately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I enroll my whole team?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many employers enroll supervisors or entire crews so everyone works to the same method. Contact an advisor at info@amiosp.com or +1 (689) 286-3561 to arrange team enrollment for your organization."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "content_version": "2026-10-31 · aligned with the final course page (JHA template) and the 2026-27 price list"
+}
